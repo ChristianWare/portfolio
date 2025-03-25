@@ -1,0 +1,108 @@
+.container {
+  background-color: var(--white);
+  padding-bottom: 5rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  padding: 2rem 0rem;
+}
+
+.heading {
+  width: 50%;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+.right {
+  padding-top: 2rem;
+}
+
+.mapDataBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 2rem 0rem;
+  position: relative;
+  border-bottom: 1px solid var(--gray);
+}
+
+.blackDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.cardLeft {
+  border-right: 1px solid var(--gray);
+  padding-left: 2rem;
+}
+
+.id {
+  font-size: 3.4rem;
+  line-height: 1.1;
+  /* color: var(--orange); */
+}
+
+.cardRight {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+
+.desc {
+  text-transform: none;
+  width: 80%;
+  color: var(--gray);
+}
+
+.projectsBox {
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    width: 100%;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cardRight {
+    padding-left: 0rem;
+  }
+
+  .id {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

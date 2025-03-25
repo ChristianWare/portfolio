@@ -1,0 +1,13 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--orange);
+  border: 1px solid var(--black);
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

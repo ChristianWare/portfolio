@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav/Nav";
+import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
+import localFont from "next/font/local";
+// import CustomCursor from "@/components/CustomCursor/CustomCursor";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const NeueHaasGroteskBold = localFont({
+  src: "../../public/fonts/NeueHaasGroteskBold.woff2",
+  variable: "--NeueHaasGroteskBold",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const NeueHaasGroteskMedium = localFont({
+  src: "../../public/fonts/NeueHaasGroteskMedium.woff2",
+  variable: "--NeueHaasGroteskMedium",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,9 +28,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang='en'>
+      <body
+        className={`${NeueHaasGroteskBold.variable} ${NeueHaasGroteskMedium.variable}`}
+      >
+        <SmoothScroll>
+          <Nav />
+          {children}
+
+          {/* <CustomCursor /> */}
+        </SmoothScroll>
       </body>
     </html>
   );

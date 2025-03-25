@@ -1,0 +1,173 @@
+.content {
+  margin-bottom: 15rem;
+  background-color: var(--white);
+  padding: 3rem;
+}
+
+.heading {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 50%;
+  padding: 3rem;
+}
+
+.blackDot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: block;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex: 1;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.circleContainer {
+  margin-left: 8rem;
+}
+
+.checkContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.namesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+
+.labelInputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+  flex: 1;
+  width: 100%;
+}
+
+.labelInputBox label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--pink);
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.labelInputBox input,
+.labelInputBox textarea {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  background-color: transparent;
+  color: var(--black);
+  padding: 1rem;
+  width: 100%;
+  font-weight: 400;
+}
+
+.labelInputBox span {
+  font-size: 1.4rem;
+  color: var(--orange);
+}
+
+.labelInputBox textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.labelInputBox ::placeholder {
+  color: var(--lightGray);
+}
+
+.error {
+  color: red !important;
+  margin-top: 0.5rem;
+}
+
+.btnBtnContainer {
+  margin-top: 5;
+  display: grid;
+}
+
+.btnContainer {
+  display: grid;
+  width: 250px;
+  margin-top: 3rem;
+  grid-template-columns: repeat(1, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circleContainer {
+    margin-left: 0rem;
+  }
+
+  .copy {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rtContainer {
+    margin-top: 5rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .namesContainer {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .btnContainer {
+    display: grid;
+    width: 100%;
+  }
+}

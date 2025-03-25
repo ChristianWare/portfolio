@@ -1,0 +1,173 @@
+.container {
+  background-color: var(--gray);
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10rem;
+  padding: 3rem;
+  border: 1px solid var(--black);
+  background-color: var(--gray);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: var(--tan);
+}
+
+.card:nth-child(2) {
+  position: relative;
+  left: -1px;
+}
+
+.card:nth-child(3) {
+  position: relative;
+  left: -2px;
+}
+
+.card:nth-child(4) {
+  background-color: transparent;
+  border: none;
+  display: hidden;
+}
+
+.card:nth-child(5) {
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+
+.card:nth-child(6) {
+  position: relative;
+  left: -2px;
+  top: -1px;
+}
+
+.card:nth-child(7) {
+  position: relative;
+  left: 0px;
+  top: -2px;
+}
+
+.title,
+.dates,
+.desc {
+  color: var(--black);
+}
+
+.company {
+  font-size: 2rem;
+}
+
+.btnContainer {
+  display: grid;
+  width: 100%;
+}
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(1) {
+    top: 0rem;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card:nth-child(2) {
+    top: 0rem;
+  }
+
+  .card:nth-child(3) {
+    left: 0px;
+    top: -1px;
+    border-radius: 0px;
+  }
+
+  .card:nth-child(5) {
+    top: -2px;
+    left: 0px;
+    border-radius: 0px;
+  }
+
+  .card:nth-child(6) {
+    top: -2px;
+    left: -1px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card:nth-child(7) {
+    top: -3px;
+    border-top-left-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .heading,
+  .copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card:nth-child(2) {
+    border-radius: 0px;
+    left: 0;
+    top: -1px;
+  }
+
+  .card:nth-child(3) {
+    top: -2px;
+  }
+
+  .card:nth-child(4) {
+    display: none;
+  }
+
+  .card:nth-child(5) {
+    position: relative;
+    border-radius: 0px;
+    border-right: 1px solid var(--lightBlack);
+    top: -3px;
+  }
+
+  .card:nth-child(6) {
+    position: relative;
+    top: -4px;
+    left: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .card:nth-child(7) {
+    top: -5px;
+  }
+
+  .btnContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+  }
+}

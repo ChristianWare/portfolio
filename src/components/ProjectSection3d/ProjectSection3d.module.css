@@ -1,0 +1,89 @@
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  overflow: hidden;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 998;
+}
+
+.box {
+  position: relative;
+}
+
+.sceneContainer {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  cursor: grab;
+  pointer-events: auto;
+}
+
+/* Changed to correct class name */
+.sceneContainer:active {
+  cursor: grabbing;
+}
+
+/* Removed the pointer-events: none from children */
+/* This allows the click events to properly reach the element */
+.sceneContainer * {
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 968px) {
+  .copy,
+  .span {
+    width: 80%;
+  }
+
+  .btnContainer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    padding-bottom: 5rem;
+  }
+
+  .copy,
+  .span {
+    width: 100%;
+  }
+
+  .sceneContainer {
+    transform: translate(-50%, -30%);
+  }
+
+  .btnContainer {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* .box {
+    display: none;
+  } */
+}
