@@ -65,7 +65,7 @@ export default function Impressions() {
   }, []);
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='about'>
       <LayoutWrapper>
         <SectionHeading number='1' title='About me' />
         <div className={styles.content}>

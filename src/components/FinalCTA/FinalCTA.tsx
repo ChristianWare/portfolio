@@ -3,9 +3,10 @@ import Footer from "../Footer/Footer";
 import Logo from "../Logo/Logo";
 
 const services = [
-  { id: 1, name: "Business Websites" },
+  { id: 1, name: "Multi-page Business Websites" },
   { id: 2, name: "E-commerce Stores" },
-  { id: 3, name: "Booking Platforms" },
+  { id: 3, name: "Landing Pages" },
+  { id: 4, name: "Full stack web applications" },
 ];
 
 export default function FinalCTA() {
@@ -13,9 +14,6 @@ export default function FinalCTA() {
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
       <div className={styles.content}>
-        {/* <video preload='auto' autoPlay muted loop className={styles.video}>
-          <source src='./videos/glass.mp4' />
-        </video> */}
         <div className={styles.contentChildren}>
           <div className={styles.left}>
             <Logo size='large' color='tan' />
@@ -30,7 +28,7 @@ export default function FinalCTA() {
               ))}
             </ul>
             <h2 className={styles.heading}>
-              We Build <br /> Innovative <br /> Websites
+              Chris Ware&apos;s <br /> Portfolio <br /> Website
             </h2>
           </div>
         </div>

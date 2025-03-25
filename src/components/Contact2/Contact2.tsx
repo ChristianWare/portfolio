@@ -11,7 +11,7 @@ const cardsData = [
 
 export default function Contact2() {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='contact'>
       <ServicesSectionIntro data={cardsData} />
       <LayoutWrapper>
         <ContactForm />

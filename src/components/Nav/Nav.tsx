@@ -7,10 +7,10 @@ import Logo from "../Logo/Logo";
 // import Button from "../Button/Button";
 
 const navItems = [
-  { text: "Works", href: "/work" },
-  { text: "About", href: "/about" },
-  { text: "Services", href: "/services" },
-  { text: "Journal", href: "/#blog" },
+  { text: "About", href: "/#about" },
+  { text: "Tech Stack", href: "/#techstack" },
+  { text: "Projects", href: "/#projects" },
+  { text: "Experience", href: "/#experience" },
   { text: "Contact", href: "/#contact" },
 ];
 

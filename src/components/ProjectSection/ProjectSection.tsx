@@ -5,7 +5,7 @@ import WorkSection from "../WorkSection/WorkSection";
 
 export default function ProjectSection() {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='experience'>
       <LayoutWrapper>
         <SectionHeading2 title='Work Experience' />
 

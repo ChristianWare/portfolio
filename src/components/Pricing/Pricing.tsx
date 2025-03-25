@@ -148,7 +148,7 @@ export default function Pricing() {
   return (
     <>
       <ServicesSectionIntro data={cardsData} />
-      <section className={styles.container}>
+      <section className={styles.container} id='projects'>
         <LayoutWrapper>
           <div className={styles.content}>
             <div className={styles.top}>

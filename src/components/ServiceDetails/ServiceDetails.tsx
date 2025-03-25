@@ -86,7 +86,7 @@ const data = [
 
 export default function ServiceDetails() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='techstack'>
       <LayoutWrapper>
         <div className={styles.bottom}>
           {data.map((x, index) => (

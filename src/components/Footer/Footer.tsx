@@ -1,8 +1,7 @@
 import styles from "./Footer.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
-import Insta from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
-import Facebook from "../../../public/icons/facebook.svg";
+import Facebook from "../../../public/icons/github.svg";
 import Link from "next/link";
 
 const services = [
@@ -33,7 +32,7 @@ export default function Footer() {
           </ul>
           <div className={styles.leftBottom}>
             <Link
-              href='https://www.linkedin.com/'
+              href='https://www.linkedin.com/in/christian-ware/'
               target='_blank'
               aria-label='LinkedIn'
               className={styles.detail}
@@ -41,21 +40,21 @@ export default function Footer() {
               <LinkedIn className={styles.icon} />
             </Link>
             <Link
-              href='https://www.facebook.com/fontsandfooters/'
+              href='https://github.com/ChristianWare'
               target='_blank'
-              aria-label='Facebook'
+              aria-label='Github'
               className={styles.detail}
             >
               <Facebook className={styles.icon} />
             </Link>
-            <Link
+            {/* <Link
               href='https://www.instagram.com/fontsandfooters/'
               target='_blank'
               aria-label='Instagram'
               className={styles.detail}
             >
               <Insta className={styles.icon} />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
