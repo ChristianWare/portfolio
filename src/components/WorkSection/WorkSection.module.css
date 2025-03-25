@@ -1,0 +1,136 @@
+.container {
+  background-color: var(--blue);
+}
+
+.content {
+  border: 1px solid var(--gray);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--tan);
+}
+
+.sectionTitle {
+  color: var(--orange);
+  background-color: var(--white);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-right: 1px solid var(--gray);
+  padding: 2rem;
+  display: block;
+  /* border-bottom: 1px solid var(--gray); */
+  /* border-right: none; */
+  /* border-bottom: none; */
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--gray);
+}
+
+.left {
+  border-right: 1px solid var(--gray);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--tan);
+}
+
+.copy {
+  padding: 2rem;
+}
+
+.resumeContainer {
+  background-color: var(--blue);
+  color: var(--tan);
+  padding: 2.1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: 1px solid var(--blue);
+  border-left: 1px solid var(--tan);
+  border-bottom: 1px solid var(--tan);
+  transition: all 0.2s ease-in;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--tan);
+  transition: all 0.2s ease-in;
+}
+
+.resumeContainer:hover {
+  background-color: var(--tan);
+  color: var(--blue);
+}
+
+.resumeContainer:hover .icon {
+  color: var(--blue);
+}
+
+.right {
+  grid-column: span 3;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.name {
+  font-size: 1.6rem;
+  color: var(--blue);
+  background-color: var(--tan);
+  font-family: var(--GTAmericaMonoRegular);
+  text-transform: uppercase;
+  padding: 2rem;
+  border-bottom: 1px solid var(--gray);
+  transition: all 0.1s ease-in;
+  width: 100%;
+}
+
+.name:nth-child(5) {
+  border-bottom: none;
+}
+
+.btnContainer {
+    display: grid;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .top,
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionTitle {
+    text-align: center;
+  }
+
+  .left {
+    border-bottom: 1px solid var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copy {
+    text-align: center;
+  }
+
+  .resumeContainer {
+    margin-bottom: 5rem;
+  }
+}

@@ -1,10 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import styles from "./Button.module.css";
 import { ReactNode } from "react";
 import Link from "next/link";
-import styles from "./Button.module.css";
-
+import Arrow from '../../../public/icons/arrow.svg'
 
 interface ButtonProps {
   href: string;
@@ -13,7 +12,6 @@ interface ButtonProps {
   target?: string;
   download?: boolean;
   arrow?: boolean;
-  onClick?: any;
   disabled?: boolean;
 }
 
@@ -23,27 +21,25 @@ export default function Button({
   btnType,
   target = "",
   download,
-  // onClick,
   disabled = false,
+  arrow,
 }: ButtonProps) {
-
   return (
-    <button
-      className={styles.container}
-      // onClick={() => {
-      //   if (!disabled && onClick) onClick();
-      // }}
-      disabled={disabled}
-      // onClick={() => handleSubmit()}
-      // onClick={() => handleSubmit()}
-    >
+    <button className={styles.container} disabled={disabled}>
       <Link
         href={href}
         className={`${styles.btn} ${styles[btnType]}`}
         target={target}
         download={download}
       >
+        <span className={styles.dot1}></span>
+        <span className={styles.dot2}></span>
+        <span className={styles.dot3}></span>
+        <span className={styles.dot4}></span>
         {text}
+        {arrow && (
+          <Arrow className={styles.icon} />
+        ) }
       </Link>
     </button>
   );

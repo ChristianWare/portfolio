@@ -19,44 +19,75 @@
   background-color: var(--gray);
   transition: all 0.3s ease-in;
   cursor: pointer;
+  border-right: none;
 }
 
 .card:hover {
   background-color: var(--tan);
 }
 
-.card:nth-child(2) {
-  position: relative;
-  left: -1px;
-}
-
-.card:nth-child(3) {
-  position: relative;
-  left: -2px;
-}
-
-.card:nth-child(4) {
+/* .card:nth-child(4),
+.card:nth-child(11) {
   background-color: transparent;
   border: none;
   display: hidden;
+} */
+
+.card:nth-child(4) {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
 }
 
-.card:nth-child(5) {
-  position: relative;
-  top: -1px;
-  left: -1px;
+.card:nth-child(4):hover,
+.card:nth-child(11):hover {
+  background-color: transparent;
 }
 
+.card:nth-child(3),
+.card:nth-child(6),
+.card:nth-child(9),
+.card:nth-child(12),
+.card:nth-child(14) {
+  border-right: 1px solid var(--black);
+}
+
+.card:nth-child(5),
+.card:nth-child(6),
+.card:nth-child(8),
+.card:nth-child(9) {
+  border-top: none;
+}
+
+.card:nth-child(5),
 .card:nth-child(6) {
-  position: relative;
-  left: -2px;
-  top: -1px;
+  border-bottom: none;
 }
 
-.card:nth-child(7) {
-  position: relative;
-  left: 0px;
-  top: -2px;
+.card:nth-child(8),
+.card:nth-child(9) {
+  border-top: 1px solid var(--black);
+}
+
+.card:nth-child(7),
+.card:nth-child(8),
+.card:nth-child(9) {
+  border-bottom: none;
+}
+
+.card:nth-child(10),
+.card:nth-child(11),
+.card:nth-child(12) {
+  border-bottom: none;
+}
+
+.card:nth-child(14) {
+  border-right: none;
+}
+
+.card:nth-child(15) {
+  border-right: none;
+  border-bottom: none;
 }
 
 .title,
@@ -65,50 +96,52 @@
   color: var(--black);
 }
 
-.company {
-  font-size: 2rem;
-}
-
-.btnContainer {
-  display: grid;
-  width: 100%;
-}
-
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1068px) {
   .bottom {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .card:nth-child(1) {
-    top: 0rem;
-    border-bottom-left-radius: 0px;
+  /* .card:nth-child(odd) {
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid var(--border);
   }
+  
+  .card:nth-child(even) {
+    border-right: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+    border-top: 1px solid var(--border);
+    border-bottom: none;
+  } */
 
-  .card:nth-child(2) {
-    top: 0rem;
+  .card:nth-child(2),
+  .card:nth-child(4),
+  .card:nth-child(8),
+  .card:nth-child(10),
+  .card:nth-child(14) {
+    border-right: 1px solid var(--black);
   }
 
   .card:nth-child(3) {
-    left: 0px;
-    top: -1px;
-    border-radius: 0px;
+    border-right: none;
+    border-top: none;
   }
 
-  .card:nth-child(5) {
-    top: -2px;
-    left: 0px;
-    border-radius: 0px;
+  .card:nth-child(4) {
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
   }
 
-  .card:nth-child(6) {
-    top: -2px;
-    left: -1px;
-    border-bottom-left-radius: 0px;
+  .card:nth-child(9) {
+    border-right: none;
   }
 
-  .card:nth-child(7) {
-    top: -3px;
-    border-top-left-radius: 0px;
+  .card:nth-child(11) {
+    border-left: none;
+  }
+
+  .card:nth-child(15) {
+    display: none;
   }
 }
 
@@ -131,37 +164,30 @@
     justify-content: center;
   }
 
-  .card:nth-child(2) {
-    border-radius: 0px;
-    left: 0;
-    top: -1px;
-  }
-
-  .card:nth-child(3) {
-    top: -2px;
-  }
-
-  .card:nth-child(4) {
+  .card:nth-child(4),
+  .card:nth-child(11) {
     display: none;
   }
 
-  .card:nth-child(5) {
-    position: relative;
-    border-radius: 0px;
-    border-right: 1px solid var(--lightBlack);
-    top: -3px;
+  .card {
+    border-right: 1px solid var(--black);
+  }
+
+  .card:nth-child(2) {
+    border-top: none;
+  }
+
+  .card:nth-child(3),
+  .card:nth-child(9) {
+    border-right: 1px solid var(--black);
   }
 
   .card:nth-child(6) {
-    position: relative;
-    top: -4px;
-    left: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top: 1px solid var(--black);
   }
 
-  .card:nth-child(7) {
-    top: -5px;
+  .card:nth-child(14) {
+    border-top: none;
   }
 
   .btnContainer {

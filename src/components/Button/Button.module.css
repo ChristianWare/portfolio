@@ -4,16 +4,13 @@
 }
 
 .btn {
-  border-radius: 50px;
-  padding: 12px 30px;
-  font-weight: 600;
+  position: relative;
+  padding: 2rem 3rem;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
   cursor: pointer;
   line-height: 1.2em;
-  padding: 10px 20px;
-  position: relative;
   z-index: 1;
   width: 100%;
   user-select: none;
@@ -22,13 +19,76 @@
   font-family: var(--NeueHaasGroteskMedium);
 }
 
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  width: 5px;
+  height: 5px;
+  background-color: var(--black);
+  position: absolute;
+  transition: all 0.2s ease-in;
+}
+
+.dot1 {
+  top: 5;
+  right: 5;
+}
+
+.dot2 {
+  bottom: 5;
+  right: 5;
+}
+
+.dot3 {
+  top: 5;
+  left: 5;
+}
+
+.dot4 {
+  bottom: 5;
+  left: 5;
+}
+
 .primary {
   color: var(--white);
+  background-color: var(--orange);
+  border: 1px solid var(--gray);
+}
+
+.primary .dot1,
+.primary .dot2,
+.primary .dot3,
+.primary .dot4 {
+  background-color: var(--white);
+}
+
+.primary:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.primary:hover .dot1,
+.primary:hover .dot2,
+.primary:hover .dot3,
+.primary:hover .dot4 {
   background-color: var(--black);
-  /* border: 2px solid var(--white); */
 }
 
 .secondary {
-  background-color: var(--white);
+  background-color: var(--tan);
   border: 1px solid var(--gray);
+}
+
+.secondary:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
 }

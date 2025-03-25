@@ -23,7 +23,7 @@ export default function Explain() {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "Building a website is only the beginning. It's important to understand the essential elements that make them thrive. My expertise spans the entire web development ecosystem, combining design, functionality, and optimization to create seamless digital experiences.";
+    "Because of my background in design, and finance, I understand the aesthetic and business side to any project.";
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -71,11 +71,8 @@ export default function Explain() {
               ))}
             </h1>
             <h1 className={styles.headingii}>
-              Building a website is only the beginning. It&apos;s important to
-              understand the essential elements that make them thrive. My
-              expertise spans the entire web development ecosystem, combining
-              design, functionality, and optimization to create seamless digital
-              experiences.
+              Because of my background in design, and finance, I understand the
+              aesthetic and business side to any project.
             </h1>
           </div>
           <div className={styles.right}>

@@ -71,17 +71,17 @@ export default function Impressions() {
         <div className={styles.content}>
           <div className={styles.left}>
             <h3 className={styles.heading}>
-              I am skilled in both front-end and back-end development. <br />
-              <br />
-              I have the ability to create comprehensive web applications from
-              start to finish.
+              • I am skilled in both front-end and back-end development
               <br />
               <br />
-              My tools of choice are Next.js/React.
+              • I have the ability to create comprehensive web applications from
+              start to finish
+              <br />
+              <br />• My tools of choice are Next.js/React
             </h3>
             <div ref={imgContainerRef} className={styles.imgContainer}>
               {/* <div ref={imageWrapperRef} className={styles.imageWrapper}>
-                <Image src={Img1} fill alt='' className={styles.img} />
+ •               <Image src={Img1} fill alt='' className={styles.img} />
               // </div> */}
               {/* <ParallaxImage src={Img1} alt='' /> */}
             </div>
