@@ -14,7 +14,7 @@ const Logo = ({ size = "", color = "" }: Props) => {
       href='/'
       className={`${styles.logo} ${styles[size]} ${styles[color]}`}
     >
-      Fonts & Footers
+      Christian Ware
     </Link>
   );
 };

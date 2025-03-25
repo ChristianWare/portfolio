@@ -10,8 +10,8 @@ const navItems = [
   { text: "Works", href: "/work" },
   { text: "About", href: "/about" },
   { text: "Services", href: "/services" },
-  { text: "Journal", href: "/blog" },
-  { text: "Start a Project", href: "/contact" },
+  { text: "Journal", href: "/#blog" },
+  { text: "Contact", href: "/#contact" },
 ];
 
 export default function Nav() {

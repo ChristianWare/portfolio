@@ -121,6 +121,7 @@ export default function Hero() {
     { id: 1, name: "Multi-page Business Websites" },
     { id: 2, name: "E-commerce Stores" },
     { id: 3, name: "Landing Pages" },
+    { id: 4, name: "Full stack web applications" },
   ];
 
   return (
@@ -132,25 +133,25 @@ export default function Hero() {
           <div className={styles.top}>
             <div className={styles.headingClip}>
               <h1 ref={refs.heading} className={styles.heading}>
-                We Build <br />
-                Innovative
+                Chris Ware&apos;s <br />
+                Portfolio
                 <br />
-                Websites <br />
+                Website <br />
               </h1>
             </div>
           </div>
           <div className={styles.bottom}>
             <div className={styles.copyContainer}>
               <p className={styles.copy} ref={refs.copy}>
-                Since 2022, we&apos;ve been crafting digital experiences that
-                matter.
+                Welcome to my portfolio website where you can learn more about
+                me and my accomplishments
               </p>
             </div>
           </div>
 
           <div className={styles.bottom2}>
             <p className={styles.servicesTitle} ref={refs.servicesTitle}>
-              What we Build:
+              Projects I like to build:
             </p>
             <ul
               className={styles.servicesContainer}
