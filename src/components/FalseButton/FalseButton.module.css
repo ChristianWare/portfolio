@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  z-index: 1;
+  z-index: 998;
+  cursor: pointer;
+}
+
+.btn {
+  z-index: 998;
+  font-family: var(--NeubauGroteskNor);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  user-select: none;
+  display: inline-block;
+  padding: 1rem 5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  width: 5px;
+  height: 5px;
+  background-color: var(--tan);
+  position: absolute;
+  transition: all 0.2s ease-in;
+}
+
+.dot1 {
+  top: 5;
+  right: 5;
+}
+
+.dot2 {
+  bottom: 5;
+  right: 5;
+}
+
+.dot3 {
+  top: 5;
+  left: 5;
+}
+
+.dot4 {
+  bottom: 5;
+  left: 5;
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.brown {
+  background-color: var(--brown);
+  color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.brown:hover {
+  background-color: var(--yellow);
+  color: var(--brown);
+}
+
+.brown:hover .dot1,
+.brown:hover .dot2,
+.brown:hover .dot3,
+.brown:hover .dot4 {
+  background-color: var(--brown);
+}
+
+.yellow {
+  background-color: var(--yellow);
+  border: 1px solid var(--brown);
+  color: var(--brown);
+}
+
+.yellow:hover {
+  background-color: var(--brown);
+  color: var(--yellow);
+}
+
+.yellow .dot1,
+.yellow .dot2,
+.yellow .dot3,
+.yellow .dot4 {
+  background-color: var(--brown);
+}
+
+.yellow:hover .dot1,
+.yellow:hover .dot2,
+.yellow:hover .dot3,
+.yellow:hover .dot4 {
+  background-color: var(--yellow);
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--tan);
+  border: 1px solid var(--blue);
+}
+
+.blue:hover {
+  background-color: var(--tan);
+  color: var(--blue);
+}
+
+.blue:hover .dot1,
+.blue:hover .dot2,
+.blue:hover .dot3,
+.blue:hover .dot4 {
+  background-color: var(--blue);
+}
+
+.tan {
+  background-color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.olive {
+  background-color: var(--olive);
+  color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.navBtn {
+  padding: 1rem 3rem;
+  color: var(--tan);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.navBtn:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.navBtn:hover .dot1,
+.navBtn:hover .dot2,
+.navBtn:hover .dot3,
+.navBtn:hover .dot4 {
+  background-color: var(--blue);
+}

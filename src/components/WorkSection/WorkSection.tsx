@@ -38,16 +38,14 @@ export default function WorkSection() {
               Here is a brief summary of the places I have worked. Click here to
               download my resume.
             </p>
-            {/* <Link
-              href='/Chris_Ware_Resume_2025.pdf'
-              target='_blank'
-              download={true}
-              className={styles.resumeContainer}
-            >
-              Download Resume
-            </Link> */}
             <div className={styles.btnContainer}>
-              <Button btnType='primary' text='Download Resume' href='/' />
+              <Button
+                btnType='primary'
+                text='Download Resume'
+                href='/ChrisWareResume2025.pdf'
+                target='_blank'
+                download={true}
+              />
             </div>
           </div>
           <div className={styles.right}>
