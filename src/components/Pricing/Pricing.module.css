@@ -62,8 +62,13 @@
   box-shadow: 0 0 15px rgba(7, 254, 255, 0.2);
 } */
 
-.price {
+.category {
   font-size: 2rem;
+  color: var(--orange);
+}
+
+.description {
+  opacity: 0.7;
 }
 
 .cardBottom {
@@ -98,6 +103,7 @@
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   grid-gap: 2rem;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 868px) {

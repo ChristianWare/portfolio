@@ -18,9 +18,43 @@ const pricingData = [
   {
     id: 2845654656,
     title: "Thunder Trails",
-    description: "Optimize your online presence and attract more visitors.",
-    href: "/services/business-websites",
+    description:
+      "Comprehensive e-commerce platform designed to drive sales for a Fictionl bike shop.",
+    href: "https://thunder-wix.vercel.app/",
+    github: "https://github.com/ChristianWare/Thunder_Wix",
     src: Thunder,
+    category: "(E-Commerce)",
+    includes: [
+      {
+        id: 27.2,
+        feature: "Next.js / React",
+      },
+      {
+        id: 27.3,
+        feature: "CSS Modules",
+      },
+      {
+        id: 27.4,
+        feature: "Wix Headless CMS API",
+      },
+      {
+        id: 27.5,
+        feature: "GSAP Animations",
+      },
+      {
+        id: 27.88888,
+        feature: "Stripe Payment Gateway",
+      },
+    ],
+  },
+  {
+    id: 28,
+    title: "Honey Drip",
+    description:
+      "Comprehensive e-commerce platform designed to drive sales for a Fictionl Honey Website.",
+    href: "https://golden-tau-ten.vercel.app/",
+    github: "https://github.com/ChristianWare/Golden",
+    src: Honey,
     category: "(E-Commerce)",
     includes: [
       {
@@ -41,101 +75,72 @@ const pricingData = [
       },
       {
         id: 28.88888,
-        feature: "Full Product Catalog",
-      },
-    ],
-  },
-  {
-    id: 27,
-    title: "Honey Drip",
-    description: "Comprehensive e-commerce platforms designed to drive sales.",
-    href: "/services/ecommerce-stores",
-    src: Honey,
-    category: "(E-Commerce)",
-    includes: [
-      {
-        id: 27.2,
         feature: "Stripe Payment Gateway",
       },
-      {
-        id: 27.3,
-        feature: "Custom coded website",
-      },
-      {
-        id: 27.4,
-        feature: "SEO Services",
-      },
-      {
-        id: 27.5,
-        feature: "24 Blog Articles/year",
-      },
-      {
-        id: 27.6,
-        feature: "Chat bot",
-      },
     ],
   },
   {
-    id: 28,
+    id: 29,
     title: "Chuxly",
-    description: "Optimize your online presence and attract more visitors.",
-    href: "/services/booking-platforms",
+    description:
+      "Comprehensive e-commerce platform designed to drive sales for a fictional audio website.",
+    href: "https://www.chuxly.com/",
+    github: "https://github.com/ChristianWare/claro15",
     src: Chuxly,
     category: "(E-Commerce)",
     includes: [
       {
-        id: 28.2,
+        id: 29.2,
+        feature: "Next.js / React",
+      },
+      {
+        id: 29.3,
+        feature: "CSS Modules",
+      },
+      {
+        id: 29.4,
+        feature: "Wix Headless CMS API",
+      },
+      {
+        id: 29.5,
+        feature: "GSAP Animations",
+      },
+      {
+        id: 29.88888,
         feature: "Stripe Payment Gateway",
       },
-      {
-        id: 28.3,
-        feature: "Custom coded website",
-      },
-      {
-        id: 28.4,
-        feature: "SEO Services",
-      },
-      {
-        id: 28.5,
-        feature: "36 Blog Articles/year",
-      },
-      {
-        id: 28.6,
-        feature: "Chat bot",
-      },
     ],
-    btnType: "tertiary",
   },
   {
-    id: 29,
+    id: 30,
     title: "Solitaire",
-    description: "Optimize your online presence and attract more visitors.",
-    href: "/services/booking-platforms",
+    description: "Classic Card game built with Typescript/Next.js.",
+    href: "https://solitaire-psi.vercel.app/",
+    github: "https://github.com/ChristianWare/solitaire",
     src: Solitaire,
     category: "(Card Game)",
     includes: [
       {
-        id: 29.2,
-        feature: "Stripe Payment Gateway",
+        id: 30.2,
+        feature: "Next.js",
       },
       {
-        id: 29.3,
-        feature: "Custom coded website",
+        id: 30.3,
+        feature: "CSS Modules",
       },
       {
-        id: 29.4,
-        feature: "SEO Services",
+        id: 30.4,
+        feature: "Drag & Drop Functionality",
       },
       {
-        id: 29.5,
-        feature: "36 Blog Articles/year",
+        id: 30.5,
+        feature: "Game Timer",
       },
       {
-        id: 29.6,
-        feature: "Chat bot",
+        id: 30.6,
+        feature: "Game Score",
       },
     ],
-    btnType: "tertiary",
   },
 ];
 
@@ -157,7 +162,7 @@ export default function Pricing() {
                   <div key={x.id} className={styles.card}>
                     <div className={styles.cardTop}>
                       <h4 className={styles.title}>{x.title}</h4>
-                      <span className={styles.price}>{x.category}</span>
+                      <span className={styles.category}>{x.category}</span>
                     </div>
                     <p className={styles.description}>{x.description}</p>
                     <div className={styles.imgContainer}>
@@ -179,11 +184,12 @@ export default function Pricing() {
                         text='Live Website'
                         href={x.href}
                         arrow
+                        target='blank'
                       />
                       <Button
                         btnType='secondary'
                         text='Gitgub'
-                        href={x.href}
+                        href={x.github}
                         target='blank'
                         arrow
                       />
