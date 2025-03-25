@@ -3,23 +3,23 @@ import styles from "./Projects.module.css";
 const data = [
   {
     id: 1,
-    name: "Chuxly",
-    link: "https://www.chuxly.com/",
+    name: "Figma",
+    link: "Wireframing & Prototyping",
   },
   {
     id: 3,
-    name: "Golden Drips",
-    link: "https://www.goldendrips.com/",
+    name: "Trello",
+    link: "Collaboration & Productivity",
   },
   {
     id: 4,
-    name: "Taco Bell",
-    link: "https://www.newtacobell.com/",
+    name: "Git",
+    link: "Version Control",
   },
   {
     id: 5,
-    name: "Nier Transportation",
-    link: "https://www.niertransportation.com",
+    name: "VSCode",
+    link: "Text Editors & IDE",
   },
 ];
 
@@ -28,14 +28,16 @@ export default function Projects() {
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.top}>
-          <h3 className={styles.heading}>Projects:</h3>
-          <h3 className={styles.headingii}>
+          <h3 className={styles.heading}>
+            My preferred tools for building exceptional websites:
+          </h3>
+          {/* <h3 className={styles.headingii}>
             ZERO-FLUFF STRATEGIC PRESENTATION <br />
             <span className={styles.span}>a.k.a the short & sweet.</span>
-          </h3>
+          </h3> */}
         </div>
         <div className={styles.bottom}>
-          <span className={styles.includes}>Includes:</span>
+          <span className={styles.includes}>Includes,  but not limited to:</span>
           <ul className={styles.mapDataBox}>
             {data.map((x) => (
               <li key={x.id} className={styles.name}>
@@ -46,15 +48,15 @@ export default function Projects() {
           <div className={styles.detailsBox}>
             <div className={styles.detailsBoxLeft}>
               <div className={styles.dblTop}>
-                <span className={styles.blackDot} /> COST
+                <span className={styles.blackDot} /> Github Projects
               </div>
-              <h4 className={styles.detail}>15k</h4>
+              <h4 className={styles.detail}>140 +</h4>
             </div>
             <div className={styles.detailsBoxRight}>
               <div className={styles.dblTop}>
-                <span className={styles.blackDot} /> TIME
+                <span className={styles.blackDot} /> Deployments
               </div>
-              <h4 className={styles.detail}>30 days</h4>
+              <h4 className={styles.detail}>50 +</h4>
             </div>
           </div>
         </div>

@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const cardsData = [
   { id: 1, title: "2:" },
-  { id: 2, title: "the main" },
-  { id: 3, title: "services" },
-  { id: 4, title: "we offer:" },
+  { id: 2, title: "My" },
+  { id: 3, title: "Tech" },
+  { id: 4, title: "Stack:" },
 ];
 
 export default function ServicesSection() {

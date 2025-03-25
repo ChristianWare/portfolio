@@ -5,22 +5,19 @@ import styles from "./ServiceDetails.module.css";
 
 const data = [
   {
-    title: "E-commerce Stores",
-    company: "Self",
+    title: "Next.js",
     description:
-      "How do you give the world’s safest car seat a priceless personality?",
+      "A React framework for building fast, full-stack web applications with server-side rendering.",
   },
   {
-    title: "Business Websites",
-    company: "KNI",
+    title: "React",
     description:
-      "How do you give the world’s safest car seat a priceless personality?",
+      "A JavaScript library for building user interfaces using reusable components.",
   },
   {
-    title: "Booking Platforms",
-    company: "Joyus App",
+    title: "HTML",
     description:
-      "How do you give the world’s safest car seat a priceless personality?",
+      "The standard markup language used to create and structure content on the web.",
   },
   {
     icon: "",
@@ -28,22 +25,20 @@ const data = [
     description: "",
   },
   {
-    title: "Landing Pages",
-    company: "Mentorworks",
+    title: "CSS",
     description:
-      "How do you give the world’s safest car seat a priceless personality?",
+      "A stylesheet language used to describe the presentation and layout of HTML elements.",
   },
   {
-    title: "Blogs",
-    company: "Fandem",
+    title: "Javascript",
     description:
-      "How do you give the world’s safest car seat a priceless personality?",
+      "A programming language that adds interactivity and logic to web pages.",
   },
   {
-    title: "Marketplaces",
+    title: "Node.js",
     company: "",
     description:
-      "How do you give the world’s safest car seat a priceless personality?",
+      "A JavaScript runtime built on Chrome’s V8 engine that allows server-side scripting.",
   },
 ];
 

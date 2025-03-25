@@ -30,7 +30,10 @@ export default function Process() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <SectionHeading number='3' title='How We Get There' />
+        <SectionHeading
+          number='3'
+          title='My Approach to coding'
+        />
         <div className={styles.content}>
           <div className={styles.left}>
             <h3 className={styles.heading}>The strategic narrative process</h3>

@@ -23,7 +23,7 @@ export default function Explain() {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "Most web developers build sites — we build profit engines. Here’s why e-commerce requires our niche expertise.";
+    "Building a website is only the beginning. It's important to understand the essential elements that make them thrive. My expertise spans the entire web development ecosystem, combining design, functionality, and optimization to create seamless digital experiences.";
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -71,9 +71,11 @@ export default function Explain() {
               ))}
             </h1>
             <h1 className={styles.headingii}>
-              About Us: <br />
-              Most web developers build sites — we build profit engines. Here’s
-              why e-commerce requires our niche expertise.
+              Building a website is only the beginning. It&apos;s important to
+              understand the essential elements that make them thrive. My
+              expertise spans the entire web development ecosystem, combining
+              design, functionality, and optimization to create seamless digital
+              experiences.
             </h1>
           </div>
           <div className={styles.right}>

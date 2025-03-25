@@ -4,8 +4,8 @@ import styles from "./Impressions.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
-import Img1 from "../../../public/images/glass2.png";
-import ParallaxImage from "../ParallaxImage/ParallaxImage";
+// import Img1 from "../../../public/images/me.png";
+// import ParallaxImage from "../ParallaxImage/ParallaxImage";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
@@ -67,39 +67,48 @@ export default function Impressions() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <SectionHeading number='1' title='First impressions matter' />
+        <SectionHeading number='1' title='About me' />
         <div className={styles.content}>
           <div className={styles.left}>
             <h3 className={styles.heading}>
-              In a world where decisions are made in a matter of seconds, you
-              only get one shot.
+              I am skilled in both front-end and back-end development. <br />
+              <br />
+              I have the ability to create comprehensive web applications from
+              start to finish.
+              <br />
+              <br />
+              My tools of choice are Next.js/React.
             </h3>
             <div ref={imgContainerRef} className={styles.imgContainer}>
               {/* <div ref={imageWrapperRef} className={styles.imageWrapper}>
                 <Image src={Img1} fill alt='' className={styles.img} />
-              </div> */}
-              <ParallaxImage src={Img1} alt='' />
+              // </div> */}
+              {/* <ParallaxImage src={Img1} alt='' /> */}
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.righContent}>
               <p className={styles.copy}>
-                Whether you’re targeting investors, customers or users, you not
-                only have to get to the point quickly, you have to give them a
-                reason to believe you’re about to make their lives better, or at
-                least make life itself better.
+                I optimize web applications for speed, performance and SEO. They
+                all have fast load times and an optimal performance across
+                various devices and network conditions.
                 <br />
                 <br />
-                Strong strategic core messaging is what lies behind that strong
-                first impression.
+                Because of my background in design, and finance, I understand
+                the aesthetic and business side to any project.
               </p>
               <h3 className={styles.headingii}>
-                It is also the foundation for whatever comes{" "}
-                <span className={styles.highlight}>next</span>
+                While websites have to make good impressions on their visitors,
+                they should also motivate them to action.
+                <br />
+                <br />
+                <span className={styles.highlight}>
+                  {" "}
+                  This is what I aim to accomplish in all of my projects.
+                </span>
               </h3>
               <h3 className={styles.headingiii}>
-                we partner with ambitious founders and executive teams who want
-                to stand out and go big.
+                Based Based in Phoenix, AZ originally from NYC.
               </h3>
             </div>
           </div>
